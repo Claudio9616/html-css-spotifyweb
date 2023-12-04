@@ -63,17 +63,18 @@ img{
 }
 /* AD HOC */
 .big-box{
-    height: calc(100vh - 100px);
+    height: calc(100vh - 80px);
     overflow: auto;
     display: flex;
 }
 .small-box{
     background-color: #282828;
-    height: 100px;
+    height: 80px;
 }
 .side-bar{
     flex-basis: 20%;
-    background-color: beige;   
+    background-color: black;  
+    padding: 10px; 
 }
 .center-content{
     flex-basis: 80%;
@@ -118,5 +119,43 @@ img{
 .radius{
     border-radius: 50%;
 }
+#logo{
+    width: 120px;
+    text-align: center;
+    display: block;
+    margin: auto;
+    margin-bottom: 30px;
+}
+/* lui deve diventare dispaly block */
+#small-logo{
+    width: 30px;
+    display: none;
+}
+.row-icons{
+    display: flex;
+    gap: 10px;
+}
+.wd-25{
+    width: 25px;
+}
+
+.side-bar li{
+    color: #696B70;
+}
+.side-bar h2{
+    font-size: 1rem;
+    margin-top: 20px;
+}
+.fa-square-plus{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+.center{
+    align-self: center;
+}
+.playlist{
+    padding-bottom: 10px;
+}
+
 
 
