@@ -10,9 +10,15 @@ body{
 /* ridimensiona a 567px */
 header{
     background-color: rgba(0, 0, 0, 0.529); 
-    width: 79%;
     height: 100px;
-    position: fixed;
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    text-align: right;
+    padding-right: 20px;
+    line-height: 95px;
+    margin-bottom: 30px;
 }
 /*  UTILITIES */
 button{
@@ -23,9 +29,6 @@ button{
     border-radius: 17px;
     border: none;
     cursor: pointer;
-    position: absolute;
-    top: 30px;
-    right: 5px;
 }
 .container{
     max-width: 900px;
@@ -80,9 +83,6 @@ img{
     flex-basis: 80%;
     background-color: #141922;
     overflow: auto;    
-}
-.main-content{
-    padding-top: 130px;
 }
 .container ul{
     display: flex;
