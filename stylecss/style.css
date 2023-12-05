@@ -172,7 +172,7 @@ img{
     height: 80px;
     display: flex;
 }
-.side-menu{
+.side-menu-left{
     flex-basis: 230px;
     flex-shrink: 0;
     /* background-color: bisque; */
@@ -192,7 +192,7 @@ img{
 }
 .right{
     flex-basis: 30%;
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
 }
 .sinister{
     background-image: url(../img/sinister.jpeg);
@@ -213,5 +213,49 @@ img{
     font-size: .8rem;
     color: #696B70;
 }
-
+.icons-right{
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #717171;
+}
+.side-menu-right{
+    flex-basis: 230px;
+    flex-shrink: 0;
+    /* background-color: bisque; */
+    display: flex;
+}
+.side-menu-right .right{
+    order: -1;
+}
+.icons-left{
+    height: 75px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #717171;
+}
+.progress-bar{
+    border-radius: 10px;
+    height: 4px;
+    background-color: #717171;
+    width: 130px;
+}
+.progress-bar .current-progress{
+    border-radius: 10px;
+    width: 30px;
+    height: 100%;
+    background-color: white;
+    position: relative;
+}
+.current-progress .marker{
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: -21%;
+    right: 0;
+}
 
