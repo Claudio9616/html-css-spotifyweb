@@ -30,10 +30,6 @@ button{
     border: none;
     cursor: pointer;
 }
-.container{
-    max-width: 900px;
-    margin: auto;
-}
 ul{
     list-style-type: none;
 }
@@ -70,27 +66,24 @@ img{
     overflow: auto;
     display: flex;
 }
-.small-box{
-    background-color: #282828;
-    height: 80px;
-}
 .side-bar{
-    flex-basis: 20%;
+    flex-basis: 230px;
+    flex-shrink: 0;
     background-color: black;  
     padding: 10px; 
 }
 .center-content{
-    flex-basis: 80%;
+    flex-grow: 1;
     background-color: #141922;
     overflow: auto;    
 }
-.container ul{
+.container-navbar ul{
     display: flex;
     justify-content: center;
     column-gap: 20px;
     color: #696B70;
 }
-.container li{
+.container-navbar li{
     border-bottom: 2px solid #ADFF2F;
 }
 .main-container{
@@ -124,7 +117,7 @@ img{
     text-align: center;
     display: block;
     margin: auto;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 /* lui deve diventare dispaly block */
 #small-logo{
@@ -144,7 +137,7 @@ img{
 }
 .side-bar h2{
     font-size: 1rem;
-    margin-top: 20px;
+    margin-top: 25px;
 }
 .fa-square-plus{
     font-size: 2.5rem;
@@ -155,7 +148,70 @@ img{
 }
 .playlist{
     padding-bottom: 10px;
+   
 }
-
+.scroll{
+    overflow: auto;
+    height: 200px;
+    margin-bottom: 75px;
+}
+.border{
+    margin-bottom: 15px;
+    border-bottom: 2px solid #717171;
+}
+.ht-35{
+    height: 35px;
+}
+.single-img{
+    padding: 3px;
+    background-color: #717171;
+    border-radius: 50%;
+}
+.small-box{
+    background-color: #282828;
+    height: 80px;
+    display: flex;
+}
+.side-menu{
+    flex-basis: 230px;
+    flex-shrink: 0;
+    /* background-color: bisque; */
+    display: flex;
+}
+.center-menu{
+    flex-grow: 1;
+    background-color: brown;
+}
+.left{
+    flex-basis: 80%;
+    /* background-color: #ADFF2F; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.right{
+    flex-basis: 30%;
+    background-color: #ffffff;
+}
+.sinister{
+    background-image: url(../img/sinister.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 63%;
+    width: 30%;
+}
+.text{
+    width: 80px;
+}
+.text .title{
+    color: white;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+.text .sub-title{
+    font-size: .8rem;
+    color: #696B70;
+}
 
 
