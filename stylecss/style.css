@@ -70,6 +70,7 @@ img{
     flex-shrink: 0;
     background-color: black;  
     padding: 10px; 
+    overflow: hidden;
 }
 .center-content{
     flex-grow: 1;
@@ -244,8 +245,9 @@ img{
     background-color: white;
     display: none;
     position: absolute;
-    top: -21%;
-    /* bottom: -2px; */
+    top: 50%;
+    left: 50%;
+    translate: 95% -50%;
     right: 0;
 }
 .center-menu{
@@ -330,14 +332,18 @@ button:hover{
     position: relative;
     cursor: pointer;
 }
+.card:hover .play,
 .col:hover .play{
     display: inline-block;
 }
-/* perchè mi balla? */
-.option{
-    border-bottom: 2px solid #ADFF2F;
-    border-bottom-style: none;    
+.nav-bar > li::after{
+    content: '';
+    display: block;
+    width: 30%;
+    height: 2px;
+    background-color: #ADFF2F;
+    margin: 3px auto;
 }
-.option:hover{
-    border-bottom-style: solid;
+.option{
+    cursor: pointer;
 }
